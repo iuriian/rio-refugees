@@ -1,0 +1,7 @@
+{
+  "name": "rio-refugees",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
