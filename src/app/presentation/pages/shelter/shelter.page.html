@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Abrigo</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Abrigos públicos</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          Identidade para os refugiados e solicitantes de refúgio, prova a situação legal no país e dá direito a expedição da CTPS. É emitido pela Polícia Federal.
+          <br/>
+          <ion-button (click)="openUrl('https://www.google.com/maps/search/rep%C3%BAblicas+no+rio+de+janeiro/@-22.9367772,-43.5368717,11z/data=!3m1!4b1')" color="secondary">
+            <ion-icon name="map-outline" ios="map-outline" md="map-outline"></ion-icon>
+          </ion-button>
+          
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Repúblicas</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Voltada ao povo que saiu das unidades de acolhimento e das ruas
+          <br/>
+          <ion-button (click)="openUrl('https://www.google.com/maps/search/rep%C3%BAblicas+no+rio+de+janeiro/@-22.9367772,-43.5368717,11z/data=!3m1!4b1')" color="secondary">
+            <ion-icon name="map-outline" ios="map-outline" md="map-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Defensoria pública da união</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Garante o direito a moradia digna e representa os cidadãos de baixa renda em assuntos relacionados a moradia
+          <br/>
+          <ion-button (click)="openUrl('https://www.google.com/maps/search/defensoria+publica+da+uniao+rio+de+janeiro/@-22.1859146,-44.3825309,13.33z')" color="secondary">
+            <ion-icon name="map-outline" ios="map-outline" md="map-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Defesa civil</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Prevenção de desastres e ações de assistências
+          <br/>
+          <ion-button (click)="openUrl('https://www.google.com/maps/search/defesa+civil+rio+de+janeiro/@-22.8534982,-43.3460266,12z/data=!3m1!4b1')" color="secondary">
+            <ion-icon name="map-outline" ios="map-outline" md="map-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Minha casa, minha vida</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Programa de habitação popular
+          <br/>
+          <ion-button (click)="openUrl('https://www.google.com/maps/search/minha+casa+minha+vida+rio+de+janeir/@-22.8534675,-43.3460267,12z/data=!3m1!4b1')" color="secondary">
+            <ion-icon name="map-outline" ios="map-outline" md="map-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+</ion-content>

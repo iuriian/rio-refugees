@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Emergência</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-grid>
+     
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Ambulância pública</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          
+          <ion-button (click)="efetueCall('192')" color="secondary">
+            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Corpo de bombeiros</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="efetueCall('193')" color="secondary">
+            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">Disk saúde</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Segunda a sexta (exceto feriados), aceita o SUS
+          <ion-button (click)="efetueCall('136')" color="secondary">
+            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
+          </ion-button>
+          
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">SUS</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Sistema único de saúde, é integral, universal e gratuito
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">UBS</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Unidade básica de saúde, oferece consulta com um médico clinico geral
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h1 class="title">UPA</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          Unidade de pronto atendimento, aberto 24h
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+</ion-content>
