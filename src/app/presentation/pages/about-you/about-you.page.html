@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+    <div class="container">
+        <ion-grid>
+            <ion-row class="ion-justify-content-center">
+                <ion-col size="10">
+                    <h1 class="title">Sobre você</h1>
+                    <hr>
+                </ion-col>
+            </ion-row>
+            <ion-row class="ion-justify-content-center">
+                <ion-col size="10">
+                    <ion-card class="card">
+                        <ion-card-content>
+                            <form action="">
+                                <app-custom-select label="Nacionalidade" [content]="nationalities"
+                                    (selected)="selectedNacionality($event)">
+                                </app-custom-select>
+
+                                <app-custom-select label="Idade" [content]="rangeAges" (selected)="selectedAge($event)">
+                                </app-custom-select>
+
+                                <app-custom-select label="Como se identificar?" [content]="optionsGender"
+                                    (selected)="selectedGender($event)">
+                                </app-custom-select>
+
+                                <app-custom-select label="Filhos?" [content]="optionsChildren"
+                                    (selected)="selectedChildrenQuantity($event)">
+                                </app-custom-select>
+
+                                <ion-button class="btn" expand="block" color="primary">SEGUIR</ion-button>
+                            </form>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>
