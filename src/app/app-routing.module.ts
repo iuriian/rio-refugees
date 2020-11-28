@@ -15,6 +15,11 @@ const routes: Routes = [
         path: 'about-you',
         loadChildren: () => import('./presentation/pages/about-you/about-you.module').then(m => m.AboutYouPageModule)
     },
+    {
+        path: 'menu',
+        loadChildren: () => import('./presentation/pages/menu/menu.module').then(m => m.MenuPageModule)
+    },
+
 ];
 
 @NgModule({

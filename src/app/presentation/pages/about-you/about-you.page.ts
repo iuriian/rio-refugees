@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-about-you',
@@ -50,7 +51,9 @@ export class AboutYouPage implements OnInit {
         }
     ];
 
-    constructor() { }
+    constructor(
+        private router: Router
+    ) { }
 
     ngOnInit() {
     }
@@ -69,5 +72,9 @@ export class AboutYouPage implements OnInit {
 
     public selectedChildrenQuantity(childs) {
         console.log(childs);
+    }
+
+    public navigateTo() {
+        this.router.navigate(['/menu']);
     }
 }
