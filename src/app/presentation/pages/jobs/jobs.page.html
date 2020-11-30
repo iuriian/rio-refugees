@@ -1,115 +1,61 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Empregos</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Empregos</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="menu"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="container">
+<ion-content [fullscreen]="true" color="primary">
     <ion-grid>
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Necessário - CTPS</h1>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Necessário">
+                    - CTPS
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Ministério do trabalho e emprego </h1>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Ministério do trabalho e emprego">
+                    <app-custom-link textLink="Responsável pelos empregos no Brasil"
+                        url="https://www.gov.br/trabalho/pt-br"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          Responsável pelos empregos no Brasil<br/>
-          <ion-button (click)="openUrl('https://www.gov.br/trabalho/pt-br')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Escola do trabalhador e PRONATEC">
+                    <app-custom-link textLink="Oferecem qualificação aos trabalhadores e combate ao desemprego"
+                        url="https://pronatec.pro.br/escola-do-trabalhador/"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Site ‘‘Trabalha Brasil’’  </h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-
-          <ion-button (click)="openUrl('https://www.trabalhabrasil.com.br')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-           
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">ManpowerGroup</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-
-          <ion-button (click)="openUrl('https://www.manpowergroup.com.br/wps/portal/manpowergroup/br/fale-conosco')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Toti Diversidade</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-
-          <ion-button (click)="openUrl('http://totidiversidade.com.br')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Somamos</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-
-          <ion-button (click)="openUrl('http://www.somamos.net.br')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Escola do trabalhador e PRONATEC</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-        Oferecem qualificação aos trabalhadores e combate ao desemprego<br/>
-        <ion-button (click)="openUrl('https://pronatec.pro.br/escola-do-trabalhador/')" color="secondary">
-          <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-        </ion-button>
-        </ion-col>
-      </ion-row>
-
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Algumas outras sugestões">
+                    <p class="content-link">
+                        <app-custom-link textLink="Trabalha Brasil" url="https://www.trabalhabrasil.com.br">
+                        </app-custom-link>
+                    </p>
+                    <p class="content-link">
+                        <app-custom-link textLink="ManpowerGroup"
+                            url="https://www.manpowergroup.com.br/wps/portal/manpowergroup/br/fale-conosco">
+                        </app-custom-link>
+                    </p>
+                    <p class="content-link">
+                        <app-custom-link textLink="Toti Diversidade" url="http://totidiversidade.com.br">
+                        </app-custom-link>
+                    </p>
+                    <p class="content-link">
+                        <app-custom-link textLink="Somamos" url="http://www.somamos.net.br"></app-custom-link>
+                    </p>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
     </ion-grid>
-  </div>
 </ion-content>

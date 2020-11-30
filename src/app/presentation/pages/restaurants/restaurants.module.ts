@@ -7,14 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { RestaurantsPageRoutingModule } from './restaurants-routing.module';
 
 import { RestaurantsPage } from './restaurants.page';
+import { SharedModule } from '@/presentation/shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RestaurantsPageRoutingModule
-  ],
-  declarations: [RestaurantsPage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RestaurantsPageRoutingModule,
+        SharedModule,
+        HttpClientModule
+    ],
+    declarations: [RestaurantsPage]
 })
-export class RestaurantsPageModule {}
+export class RestaurantsPageModule { }

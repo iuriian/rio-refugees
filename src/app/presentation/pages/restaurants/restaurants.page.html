@@ -1,125 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Restaurantes</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Restaurantes</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="container">
+<ion-content [fullscreen]="true" color="primary">
     <ion-grid>
-
-      <ion-list>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/afeganistao.jpg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Afeganistão</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/angola.jpg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Angola</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/colombia.jpg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Colombia</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/congo.png" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Congo</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/cuba.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Cuba</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/egito.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Egito</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/guine.png" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Guiné</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/haiti.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Haiti</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/iraque.jpg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Iraque</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/libano.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Líbano</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/nigeria.png" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Nigéria</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/palestina.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Palestina</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/paquistao.png" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Paquistão</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/republica dominicana.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>República Dominicana</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/senegal.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Senegal</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/siria.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Síria</ion-label>
-        </ion-item>
-
-        <ion-item>
-          <ion-label>
-            <img src="../../assets/img/bandeiras/venezuela.svg" height="70px" width="140px">
-          </ion-label>
-          <ion-label>Venezuela</ion-label>
-        </ion-item>
-
-      </ion-list>
-
-
-
+        <ion-row>
+            <ion-col size="4" *ngFor="let country of (countriesList$ | async)?.countries">
+                <app-custom-image-list [title]="country.name" [img]="country.flag">
+                </app-custom-image-list>
+            </ion-col>
+        </ion-row>
     </ion-grid>
-  </div>
 </ion-content>

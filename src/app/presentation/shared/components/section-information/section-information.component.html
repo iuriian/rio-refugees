@@ -1,0 +1,10 @@
+<section class="information">
+    <h2 class="title" *ngIf="title">{{ title }}</h2>
+    <hr class="line" *ngIf="title">
+    <p class="content">
+        <ng-content></ng-content>
+    </p>
+    <ion-button *ngIf="hasMap" slot="end" expand="block" color="light" class="ion-margin-top" (click)="openUrl()">
+        Veja onde encontrar <ion-icon class="icon" name="map-outline"></ion-icon>
+    </ion-button>
+</section>

@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { CommunitiesPageRoutingModule } from './communities-routing.module';
 
 import { CommunitiesPage } from './communities.page';
+import { SharedModule } from '@/presentation/shared/shared.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    CommunitiesPageRoutingModule
-  ],
-  declarations: [CommunitiesPage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        CommunitiesPageRoutingModule,
+        SharedModule
+    ],
+    declarations: [CommunitiesPage]
 })
-export class CommunitiesPageModule {}
+export class CommunitiesPageModule { }

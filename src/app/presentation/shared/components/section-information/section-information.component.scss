@@ -1,0 +1,32 @@
+.information {
+    margin: 0px 10px;
+
+    .title {
+        color: #fff;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        letter-spacing: 0.07rem;
+    }
+
+    .line {
+        background-color: #fff;
+        margin-top: 4px;
+    }
+
+    .content {
+        font-size: clamp(18px, 16px, 16px);
+        text-align: left;
+        line-height: 20px;
+        letter-spacing: 0.05rem;
+        margin: 0px;
+        text-indent: 14px;
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .icon {
+        margin-left: 8px;
+    }
+}

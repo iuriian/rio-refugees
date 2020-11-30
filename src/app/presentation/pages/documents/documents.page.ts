@@ -1,20 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { BrowserService } from '@/services/browser/browser.service';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-documents',
     templateUrl: './documents.page.html',
     styleUrls: ['./documents.page.scss'],
 })
-export class DocumentsPage implements OnInit {
+export class DocumentsPage {
 
-    constructor(private browserService: BrowserService) { }
+    public readonly url = 'http://www.pf.gov.br/servicos-pf/imigracao/refugio/refugio-termo-solicitacao';
 
-    ngOnInit() {
-    }
-
-    openUrl(url) {
-        this.browserService.openWithSystemBrowser(url);
-    }
+    constructor() { }
 
 }

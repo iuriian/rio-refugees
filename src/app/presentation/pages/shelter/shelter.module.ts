@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ShelterPageRoutingModule } from './shelter-routing.module';
 
 import { ShelterPage } from './shelter.page';
+import { SharedModule } from '@/presentation/shared/shared.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    ShelterPageRoutingModule
-  ],
-  declarations: [ShelterPage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        ShelterPageRoutingModule,
+        SharedModule
+    ],
+    declarations: [ShelterPage]
 })
-export class ShelterPageModule {}
+export class ShelterPageModule { }

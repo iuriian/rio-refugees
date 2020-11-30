@@ -1,0 +1,72 @@
+{
+    "countries": [
+        {
+            "name": "Afeganistão",
+            "flag": "../../assets/img/bandeiras/afeganistao.jpg"
+        },
+        {
+            "name": "Angola",
+            "flag": "../../assets/img/bandeiras/angola.jpg"
+        },
+        {
+            "name": "Colombia",
+            "flag": "../../assets/img/bandeiras/colombia.jpg"
+        },
+        {
+            "name": "Congo",
+            "flag": "../../assets/img/bandeiras/congo.png"
+        },
+        {
+            "name": "Cuba",
+            "flag": "../../assets/img/bandeiras/cuba.svg"
+        },
+        {
+            "name": "Egito",
+            "flag": "../../assets/img/bandeiras/egito.svg"
+        },
+        {
+            "name": "Guiné",
+            "flag": "../../assets/img/bandeiras/guine.png"
+        },
+        {
+            "name": "Haiti",
+            "flag": "../../assets/img/bandeiras/haiti.svg"
+        },
+        {
+            "name": "Iraque",
+            "flag": "../../assets/img/bandeiras/iraque.jpg"
+        },
+        {
+            "name": "Líbano",
+            "flag": "../../assets/img/bandeiras/libano.svg"
+        },
+        {
+            "name": "Nigéria",
+            "flag": "../../assets/img/bandeiras/nigeria.png"
+        },
+        {
+            "name": "Palestina",
+            "flag": "../../assets/img/bandeiras/palestina.svg"
+        },
+        {
+            "name": "Paquistão",
+            "flag": "../../assets/img/bandeiras/paquistao.png"
+        },
+        {
+            "name": "República Dominicana",
+            "flag": "../../assets/img/bandeiras/republica-dominicana.svg"
+        },
+        {
+            "name": "Senegal",
+            "flag": "../../assets/img/bandeiras/senegal.svg"
+        },
+        {
+            "name": "Síria",
+            "flag": "../../assets/img/bandeiras/siria.svg"
+        },
+        {
+            "name": "Venezuela",
+            "flag": "../../assets/img/bandeiras/venezuela.svg"
+        }
+    ]
+}

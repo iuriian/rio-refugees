@@ -2,79 +2,57 @@
     <ion-toolbar>
         <ion-title>Assistência jurídica</ion-title>
         <ion-buttons slot="start">
-            <ion-back-button defaultHref="home"></ion-back-button>
+            <ion-back-button defaultHref="menu"></ion-back-button>
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-    <div class="container">
-        <ion-grid>
+<ion-content [fullscreen]="true" color="primary">
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Alto comissariado das Nações Unidas para Refugiados">
+                    <app-custom-link textLink="O ACNUR atua em cooperação com a Conare e em coordenação com os governos federal, estaduais e
+                    municipais, além de outras instâncias do Poder público." url="https://www.acnur.org/">
+                    </app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
+        <ion-row>
+            <ion-col>
+                <app-section-information title="CARITAS">
+                    <app-custom-link textLink="Presta serviço de acolhimento e integração de refugiados e imigrantes."
+                        url="http://caritas.org.br/"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-            <ion-row>
-                <ion-col>
-                    <h1 class="title">Alto comissariado das Nações Unidas para Refugiados </h1>
-                </ion-col>
-            </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="CONARE (Comitê Nacional Para Refugiados)">
+                    <app-custom-link textLink="Decide e revisa as solicitações de refúgio no Brasil."
+                        url="https://www.justica.gov.br/seus-direitos/refugio/conare"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-            <ion-row>
-                <ion-col>
-                    o ACNUR atua em cooperação com a Conare e em coordenação com os governos federal, estaduais e
-                    municipais, além de outras instâncias do Poder público. https://www.acnur.org/
-                </ion-col>
-            </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Coordenação Geral de imigração">
+                    <app-custom-link textLink="Regula o trabalho de imigrantes no país."
+                        url="https://portaldeimigracao.mj.gov.br/pt/informacoes-gerais"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-            <ion-row>
-                <ion-col>
-                    <h1 class="title">CARITAS</h1>
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col>
-                    Presta serviço de acolhimento e integração de refugiados e imigrantes. http://caritas.org.br/
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col>
-                    <h1 class="title">CONARE (Comitê Nacional Para Refugiados)</h1>
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col>
-                    Decide e revisa as solicitações de refúgio no Brasil.
-                    https://www.justica.gov.br/seus-direitos/refugio/conare
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col>
-                    <h1 class="title">Coordenação Geral de imigração</h1>
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col>
-                    Regula o trabalho de imigrantes no país. https://portaldeimigracao.mj.gov.br/pt/informacoes-gerais
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col>
-                    <h1 class="title">Migrante Web</h1>
-                </ion-col>
-            </ion-row>
-
-            <ion-row>
-                <ion-col>
-                    Facilita o pedido de autorização de trabalho a migrantes onine.
-                    https://portaldeimigracao.mj.gov.br/pt/migranteweb
-                </ion-col>
-            </ion-row>
-
-        </ion-grid>
-    </div>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Migrante Web">
+                    <app-custom-link textLink="Facilita o pedido de autorização de trabalho a migrantes onine."
+                        url="https://portaldeimigracao.mj.gov.br/pt/migranteweb"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BrowserService } from '@/services/browser/browser.service';
+import { from, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-restaurants',
@@ -8,9 +11,15 @@ import { BrowserService } from '@/services/browser/browser.service';
 })
 export class RestaurantsPage implements OnInit {
 
-    constructor(private browserService: BrowserService) { }
+    public countriesList$: Observable<any>;
+
+    constructor(
+        private browserService: BrowserService,
+        private readonly httpClient: HttpClient
+    ) { }
 
     ngOnInit() {
+        this.countriesList$ = this.httpClient.get('../../../../assets/countries-paths.json');
     }
 
     openUrl(url) {

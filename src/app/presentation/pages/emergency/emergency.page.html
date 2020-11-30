@@ -1,98 +1,61 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Emergência</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Emergência</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="menu"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="container">
+<ion-content [fullscreen]="true" color="primary">
     <ion-grid>
-     
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Ambulância pública">
+                    <app-custom-link-call tel="192" text="192"></app-custom-link-call>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Ambulância pública</h1>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Corpo de bombeiros">
+                    <app-custom-link-call tel="193" text="193"></app-custom-link-call>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          
-          <ion-button (click)="efetueCall('192')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Disk saúde">
+                    Segunda a sexta (exceto feriados), aceita o SUS.
+                    <app-custom-link-call tel="193" text="193"></app-custom-link-call>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Corpo de bombeiros</h1>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="SUS">
+                    Sistema único de saúde, é integral, universal e gratuito.
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <ion-button (click)="efetueCall('193')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="UBS">
+                    Unidade básica de saúde, oferece consulta com um médico clinico geral.
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Disk saúde</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          Segunda a sexta (exceto feriados), aceita o SUS
-          <ion-button (click)="efetueCall('136')" color="secondary">
-            <ion-icon name="navigate-outline" ios="navigate-outline" md="navigate-outline"></ion-icon>
-          </ion-button>
-          
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">SUS</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          Sistema único de saúde, é integral, universal e gratuito
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">UBS</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          Unidade básica de saúde, oferece consulta com um médico clinico geral
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">UPA</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          Unidade de pronto atendimento, aberto 24h
-        </ion-col>
-      </ion-row>
-
+        <ion-row>
+            <ion-col>
+                <app-section-information title="UPA">
+                    Unidade de pronto atendimento, aberto 24h.
+                </app-section-information>
+            </ion-col>
+        </ion-row>
     </ion-grid>
-  </div>
 </ion-content>

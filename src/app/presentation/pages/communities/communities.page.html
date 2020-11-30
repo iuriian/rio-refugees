@@ -1,53 +1,41 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Comunidade</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Comunidade</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="menu"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="container">
+<ion-content [fullscreen]="true" color="primary">
     <ion-grid>
-     
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Agora juntas">
+                    <app-custom-link
+                        textLink="Fortalece as articulações coletivas e busca promover a autonomia das feministas."
+                        url="https://www.facebook.com/agora.juntas"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Agora juntas</h1>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Refoodges">
+                    Refugiados envolvidos com gastronomia recebem suporte de profissionalização e inserção no mercado de
+                    trabalho
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
-      <ion-row>
-        <ion-col>
-          Fortalece as articulações coletivas e busca promover a autonomia das feministas. https://www.facebook.com/agora.juntas
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Refoodges</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          Refugiados envolvidos com gastronomia recebem suporte de profissionalização e inserção no mercado de trabalho
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <h1 class="title">Tamo Juntas</h1>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          Presta acessoria judicial, psicologia, social e pedagógica https://tamojuntas.org.br/
-        </ion-col>
-      </ion-row>
+        <ion-row>
+            <ion-col>
+                <app-section-information title="Tamo Juntas">
+                    <app-custom-link textLink="Presta acessoria judicial, psicologia, social e pedagógica"
+                        url="https://tamojuntas.org.br/"></app-custom-link>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
 
     </ion-grid>
-  </div>
 </ion-content>
