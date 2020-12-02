@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Comunidade</ion-title>
+        <ion-title>{{'comunidade' | transloco}}</ion-title>
         <ion-buttons slot="start">
             <ion-back-button defaultHref="menu"></ion-back-button>
         </ion-buttons>
@@ -11,9 +11,9 @@
     <ion-grid>
         <ion-row>
             <ion-col>
-                <app-section-information title="Agora juntas">
+                <app-section-information title="{{'agoraJuntasTitle' | transloco}}">
                     <app-custom-link
-                        textLink="Fortalece as articulações coletivas e busca promover a autonomia das feministas."
+                        textLink="{{'fortaleceArticulacao' | transloco}}"
                         url="https://www.facebook.com/agora.juntas"></app-custom-link>
                 </app-section-information>
             </ion-col>
@@ -22,8 +22,7 @@
         <ion-row>
             <ion-col>
                 <app-section-information title="Refoodges">
-                    Refugiados envolvidos com gastronomia recebem suporte de profissionalização e inserção no mercado de
-                    trabalho
+                    {{'comunidaderefoodge' | transloco}}
                 </app-section-information>
             </ion-col>
         </ion-row>
@@ -31,7 +30,7 @@
         <ion-row>
             <ion-col>
                 <app-section-information title="Tamo Juntas">
-                    <app-custom-link textLink="Presta acessoria judicial, psicologia, social e pedagógica"
+                    <app-custom-link textLink="{{'prestaAcessoria' | transloco}}"
                         url="https://tamojuntas.org.br/"></app-custom-link>
                 </app-section-information>
             </ion-col>

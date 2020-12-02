@@ -11,6 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { PresentationModule } from './presentation/presentation.module';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { CallNumber } from '@ionic-native/call-number/ngx';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
+import { IonicSelectableModule } from 'ionic-selectable';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
     declarations: [AppComponent],
@@ -18,7 +22,11 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
         BrowserModule,
         IonicModule.forRoot(),
         AppRoutingModule,
-        PresentationModule
+        PresentationModule,
+        HttpClientModule,
+        TranslocoRootModule,
+        IonicSelectableModule,
+        IonicStorageModule.forRoot()
     ],
     providers: [
         StatusBar,

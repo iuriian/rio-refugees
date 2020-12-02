@@ -3,7 +3,7 @@
         <ion-grid>
             <ion-row class="ion-justify-content-center">
                 <ion-col size="10">
-                    <h1 class="title">Sobre você</h1>
+                    <h1 class="title">{{'sobre-voce' | transloco}}</h1>
                     <hr>
                 </ion-col>
             </ion-row>
@@ -12,22 +12,22 @@
                     <ion-card class="card">
                         <ion-card-content>
                             <form action="">
-                                <app-custom-select label="Nacionalidade" [content]="nationalities"
+                                <app-custom-select label="{{'nacionalidade' | transloco}}" [content]="nationalities"
                                     (selected)="selectedNacionality($event)">
                                 </app-custom-select>
 
-                                <app-custom-select label="Idade" [content]="rangeAges" (selected)="selectedAge($event)">
+                                <app-custom-select label="{{'idade' | transloco}}" [content]="rangeAges" (selected)="selectedAge($event)">
                                 </app-custom-select>
 
-                                <app-custom-select label="Como se identificar?" [content]="optionsGender"
+                                <app-custom-select label="{{'como-se-identifica' | transloco}}" [content]="optionsGender"
                                     (selected)="selectedGender($event)">
                                 </app-custom-select>
 
-                                <app-custom-select label="Filhos?" [content]="optionsChildren"
+                                <app-custom-select label="{{'filhos' | transloco}}" [content]="optionsChildren"
                                     (selected)="selectedChildrenQuantity($event)">
                                 </app-custom-select>
 
-                                <ion-button class="btn" (click)="navigateTo()" expand="block" color="primary">SEGUIR
+                                <ion-button class="btn" (click)="navigateTo()" expand="block" color="primary">{{'seguir' | transloco}}
                                 </ion-button>
                             </form>
                         </ion-card-content>

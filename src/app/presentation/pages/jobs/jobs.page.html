@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Empregos</ion-title>
+        <ion-title>{{'empregos' | transloco}}</ion-title>
         <ion-buttons slot="start">
             <ion-back-button defaultHref="menu"></ion-back-button>
         </ion-buttons>
@@ -9,18 +9,12 @@
 
 <ion-content [fullscreen]="true" color="primary">
     <ion-grid>
-        <ion-row>
-            <ion-col>
-                <app-section-information title="Necessário">
-                    - CTPS
-                </app-section-information>
-            </ion-col>
-        </ion-row>
+       
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Ministério do trabalho e emprego">
-                    <app-custom-link textLink="Responsável pelos empregos no Brasil"
+                <app-section-information title="{{'ministerioTrabalhoEmprego' | transloco}}">
+                    <app-custom-link textLink="{{'responsavelEmpregosBR' | transloco}}"
                         url="https://www.gov.br/trabalho/pt-br"></app-custom-link>
                 </app-section-information>
             </ion-col>
@@ -28,8 +22,8 @@
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Escola do trabalhador e PRONATEC">
-                    <app-custom-link textLink="Oferecem qualificação aos trabalhadores e combate ao desemprego"
+                <app-section-information title="{{'escolaepornatec' | transloco}}">
+                    <app-custom-link textLink="{{'qualificacaodesemprego' | transloco}}"
                         url="https://pronatec.pro.br/escola-do-trabalhador/"></app-custom-link>
                 </app-section-information>
             </ion-col>
@@ -37,7 +31,7 @@
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Algumas outras sugestões">
+                <app-section-information title="{{'outrasSugestoes' | transloco}}">
                     <p class="content-link">
                         <app-custom-link textLink="Trabalha Brasil" url="https://www.trabalhabrasil.com.br">
                         </app-custom-link>

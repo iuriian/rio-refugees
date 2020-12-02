@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true" class="main-backgroud">
+<ion-content [fullscreen]="true" class="main-backgroud" >
     <div class="container">
         <ion-grid>
             <ion-row>
@@ -11,9 +11,21 @@
                     <img class="icon" src="../../assets/img/logo-tt.png" alt="ícone da aplicação">
                 </ion-col>
             </ion-row>
+            
             <ion-row>
                 <ion-col>
-                    <ion-button color="primary" class="btn" (click)="navigateTo()">ENTER</ion-button>
+                    <ion-label>{{'select-language' | transloco}}</ion-label>
+                    <ionic-selectable multiple="false" item-content [(ngModel)]="port" [canSearch]="true" (onChange)="setLang($event)" itemValueField="id" itemTextField="name" [items]="ports">
+                        <ng-template ionicSelectableItemEndTemplate let-port="item" let-isPortSelected="isItemSelected">
+                            <img class="country-flag" [src]="port.flagUrl" />
+                        </ng-template>
+                    </ionic-selectable>
+                  </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <ion-button color="primary" class="btn" (click)="navigateTo()">{{'enter' | transloco}}</ion-button>
                 </ion-col>
             </ion-row>
         </ion-grid>

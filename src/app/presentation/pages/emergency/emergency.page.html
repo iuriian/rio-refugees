@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Emergência</ion-title>
+        <ion-title>{{'emergencia' | transloco}}</ion-title>
         <ion-buttons slot="start">
             <ion-back-button defaultHref="menu"></ion-back-button>
         </ion-buttons>
@@ -11,7 +11,7 @@
     <ion-grid>
         <ion-row>
             <ion-col>
-                <app-section-information title="Ambulância pública">
+                <app-section-information title="{{'emergencia192' | transloco}}">
                     <app-custom-link-call tel="192" text="192"></app-custom-link-call>
                 </app-section-information>
             </ion-col>
@@ -19,7 +19,7 @@
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Corpo de bombeiros">
+                <app-section-information title="{{'emergencia193' | transloco}}">
                     <app-custom-link-call tel="193" text="193"></app-custom-link-call>
                 </app-section-information>
             </ion-col>
@@ -27,33 +27,24 @@
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Disk saúde">
-                    Segunda a sexta (exceto feriados), aceita o SUS.
-                    <app-custom-link-call tel="193" text="193"></app-custom-link-call>
+                <app-section-information title="{{'emergencia136' | transloco}}">
+                    <app-custom-link-call tel="136" text="136"></app-custom-link-call>
+                </app-section-information>
+            </ion-col>
+        </ion-row>
+
+      
+
+        <ion-row>
+            <ion-col>
+                <app-section-information title="{{'emergenciaubs' | transloco}}">
                 </app-section-information>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col>
-                <app-section-information title="SUS">
-                    Sistema único de saúde, é integral, universal e gratuito.
-                </app-section-information>
-            </ion-col>
-        </ion-row>
-
-        <ion-row>
-            <ion-col>
-                <app-section-information title="UBS">
-                    Unidade básica de saúde, oferece consulta com um médico clinico geral.
-                </app-section-information>
-            </ion-col>
-        </ion-row>
-
-        <ion-row>
-            <ion-col>
-                <app-section-information title="UPA">
-                    Unidade de pronto atendimento, aberto 24h.
+                <app-section-information title="{{'emergenciaupa' | transloco}}">
                 </app-section-information>
             </ion-col>
         </ion-row>

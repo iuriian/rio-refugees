@@ -10,6 +10,8 @@ import { SectionInformationComponent } from './section-information/section-infor
 import { CustomLinkComponent } from './custom-link/custom-link.component';
 import { CustomLinkCallComponent } from './custom-link-call/custom-link-call.component';
 import { CustomImageListComponent } from './custom-image-list/custom-image-list.component';
+import { SharedModule } from '../shared.module';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @NgModule({
     declarations: [
@@ -18,12 +20,13 @@ import { CustomImageListComponent } from './custom-image-list/custom-image-list.
         SectionInformationComponent,
         CustomLinkComponent,
         CustomLinkCallComponent,
-        CustomImageListComponent
+        CustomImageListComponent,
     ],
     imports: [
         CommonModule,
         IonicModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        TranslocoModule
     ],
     exports: [
         CustomSelectComponent,

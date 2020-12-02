@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Restaurantes</ion-title>
+        <ion-title>{{'restaurante' | transloco}}</ion-title>
         <ion-buttons slot="start">
             <ion-back-button defaultHref="home"></ion-back-button>
         </ion-buttons>
@@ -11,7 +11,7 @@
     <ion-grid>
         <ion-row>
             <ion-col size="4" *ngFor="let country of (countriesList$ | async)?.countries">
-                <app-custom-image-list [title]="country.name" [img]="country.flag">
+                <app-custom-image-list (click)="openUrl(country.url)" [title]="country.name | transloco" [img]="country.flag">
                 </app-custom-image-list>
             </ion-col>
         </ion-row>

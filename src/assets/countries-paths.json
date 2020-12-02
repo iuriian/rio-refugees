@@ -1,72 +1,89 @@
 {
     "countries": [
         {
-            "name": "Afeganistão",
-            "flag": "../../assets/img/bandeiras/afeganistao.jpg"
+            "name": "comunidaderestauranteafeganistao",
+            "flag": "../../assets/img/bandeiras/afeganistao.jpg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Angola",
-            "flag": "../../assets/img/bandeiras/angola.jpg"
+            "name": "comunidaderestauranteangola",
+            "flag": "../../assets/img/bandeiras/angola.jpg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Colombia",
-            "flag": "../../assets/img/bandeiras/colombia.jpg"
+            "name": "comunidaderestaurantecolombia",
+            "flag": "../../assets/img/bandeiras/colombia.jpg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Congo",
-            "flag": "../../assets/img/bandeiras/congo.png"
+            "name": "comunidaderestaurantecongo",
+            "flag": "../../assets/img/bandeiras/congo.png",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
             "name": "Cuba",
-            "flag": "../../assets/img/bandeiras/cuba.svg"
+            "flag": "../../assets/img/bandeiras/cuba.svg",
+            "url": ""
         },
         {
-            "name": "Egito",
-            "flag": "../../assets/img/bandeiras/egito.svg"
+            "name": "comunidaderestauranteegito",
+            "flag": "../../assets/img/bandeiras/egito.svg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Guiné",
-            "flag": "../../assets/img/bandeiras/guine.png"
+            "name": "comunidaderestauranteguine",
+            "flag": "../../assets/img/bandeiras/guine.png",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
             "name": "Haiti",
-            "flag": "../../assets/img/bandeiras/haiti.svg"
+            "flag": "../../assets/img/bandeiras/haiti.svg",
+            "url": ""
         },
         {
-            "name": "Iraque",
-            "flag": "../../assets/img/bandeiras/iraque.jpg"
+            "name": "comunidaderestauranteiraque",
+            "flag": "../../assets/img/bandeiras/iraque.jpg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c11744-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Líbano",
-            "flag": "../../assets/img/bandeiras/libano.svg"
+            "name": "comunidaderestaurantelibano",
+            "flag": "../../assets/img/bandeiras/libano.svg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c11744-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Nigéria",
-            "flag": "../../assets/img/bandeiras/nigeria.png"
+            "name": "comunidaderestaurantenigeria",
+            "flag": "../../assets/img/bandeiras/nigeria.png",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
             "name": "Palestina",
-            "flag": "../../assets/img/bandeiras/palestina.svg"
+            "flag": "../../assets/img/bandeiras/palestina.svg",
+            "url": ""
         },
         {
             "name": "Paquistão",
-            "flag": "../../assets/img/bandeiras/paquistao.png"
+            "flag": "../../assets/img/bandeiras/paquistao.png",
+            "url": ""
         },
         {
             "name": "República Dominicana",
-            "flag": "../../assets/img/bandeiras/republica-dominicana.svg"
+            "flag": "../../assets/img/bandeiras/republica-dominicana.svg",
+            "url": ""
         },
         {
-            "name": "Senegal",
-            "flag": "../../assets/img/bandeiras/senegal.svg"
+            "name": "comunidaderestaurantesenegal",
+            "flag": "../../assets/img/bandeiras/senegal.svg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Síria",
-            "flag": "../../assets/img/bandeiras/siria.svg"
+            "name": "comunidaderestaurantesiria",
+            "flag": "../../assets/img/bandeiras/siria.svg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c11744-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         },
         {
-            "name": "Venezuela",
-            "flag": "../../assets/img/bandeiras/venezuela.svg"
+            "name": "comunidaderestaurantevenezuela",
+            "flag": "../../assets/img/bandeiras/venezuela.svg",
+            "url": "https://www.tripadvisor.com.br/Restaurants-g303506-c10626-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html"
         }
     ]
 }

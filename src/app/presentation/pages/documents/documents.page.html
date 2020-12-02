@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Documentos</ion-title>
+        <ion-title>{{'documento' | transloco}}</ion-title>
         <ion-buttons slot="start">
             <ion-back-button defaultHref="menu"></ion-back-button>
         </ion-buttons>
@@ -11,10 +11,8 @@
     <ion-grid>
         <ion-row>
             <ion-col>
-                <app-section-information title="Protocolo de Solicitação de Refúgio">
-                    Identidade para os refugiados e solicitantes de refúgio, prova a situação legal
-                    no país e dá
-                    direito a expedição da CTPS. É emitido pela <app-custom-link textLink="Polícia
+                <app-section-information title=" {{'protocoloTitle' | transloco}}">
+                   {{'protocoloSolicitaidentidaderefugiado' | transloco}} <app-custom-link textLink="Polícia
                     Federal" [url]="url"></app-custom-link>.
                 </app-section-information>
             </ion-col>
@@ -23,42 +21,39 @@
         <ion-row>
             <ion-col>
                 <app-section-information title="CTPS">
-                    Carteira de trabalho e previdência social, é obrigatório para obter um trabalho
-                    regularizado.
+                    {{'ctps' | transloco}}
                 </app-section-information>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Registro nacional do estrangeiro">
-                    Equivalente ao RG.
+                <app-section-information title="{{'registroNacionalTitle' | transloco}}">
+                    {{'rne' | transloco}}
                 </app-section-information>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Naturalização">
-                    O refugiado se naturaliza brasileiro após 4 anos residindo no Brasil.
+                <app-section-information title="{{'naturalizaoTitle' | transloco}}">
+                    {{'naturalizacao' | transloco}}
                 </app-section-information>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col>
-                <app-section-information title="Residência permanente">
-                    Adquirida após 4 anos residindo no Brasil.
+                <app-section-information title="{{'residenciaPermanenteTitle' | transloco}}">
+                    {{'adquiridaAnos' | transloco}}
                 </app-section-information>
             </ion-col>
         </ion-row>
 
         <ion-row>
             <ion-col class="ion-margin-bottom">
-                <app-section-information title="Visto temporário e autorização de residência para sírios">
-                    Refugiados afetados pelos conflitos armados da Síria, ganham direito a
-                    autorização de
-                    residência de forma mais simplificada.
+                <app-section-information title="{{'vistoTemporarioTitle' | transloco}}">
+                    {{'vistotemporario' | transloco}}
                 </app-section-information>
             </ion-col>
         </ion-row>

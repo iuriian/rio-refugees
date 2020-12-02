@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { TranslocoModule } from '@ngneat/transloco';
+import { SharedModule } from '@/presentation/shared/shared.module';
+import { IonicSelectableModule } from 'ionic-selectable';
 
 
 @NgModule({
@@ -12,7 +15,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    TranslocoModule,
+    SharedModule,
+    IonicSelectableModule
   ],
   declarations: [HomePage]
 })
